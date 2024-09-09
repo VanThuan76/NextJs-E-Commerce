@@ -1,18 +1,18 @@
 'use client'
 
 import { Breadcrumbs } from '@/shared/components/ui/breadcrumbs';
-import { useGetUser } from '@/server/_actions/user-action';
-import { UserClient } from '@/shared/components/table/user-tables/client';
+import { CategoryClient } from '@/shared/components/table/category-tables/client';
+import { useGetCategory } from '@/server/_actions/category-action';
 import PageContainer from '@/shared/components/page-container';
 import SkeletonTable from '@/shared/components/table/skeleton-table';
 
 const breadcrumbItems = [
     { title: 'Dashboard', link: '/admin' },
-    { title: 'User', link: '/admin/user' }
+    { title: 'Category', link: '/admin/category' }
 ];
 
 const Page = () => {
-    const { data: users, isLoading } = useGetUser()
+    const { data: categories, isLoading } = useGetCategory()
 
     return (
         <PageContainer>
@@ -20,8 +20,8 @@ const Page = () => {
                 <Breadcrumbs items={breadcrumbItems} />
                 {isLoading ? (
                     <SkeletonTable />
-                ) : users && (
-                    <UserClient data={users} />
+                ) : categories && (
+                    <CategoryClient data={categories} />
                 )}
             </div>
         </PageContainer>

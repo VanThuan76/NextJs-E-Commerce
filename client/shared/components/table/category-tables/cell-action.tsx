@@ -14,12 +14,11 @@ import {
     DropdownMenuTrigger
 } from '@/shared/components/ui/dropdown-menu';
 
-import { IUser } from '@/server/_types/user-type';
-
-import { useDeleteUser } from '@/server/_actions/user-action';
+import { ICategory } from '@/server/_types/category-type';
+import { useDeleteCategory } from '@/server/_actions/category-action';
 
 interface CellActionProps {
-    data: IUser;
+    data: ICategory;
 }
 
 export const CellAction: React.FC<CellActionProps> = ({ data }) => {
@@ -27,15 +26,15 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
     const [open, setOpen] = useState(false);
     const router = useRouter();
 
-    const { mutate: deleteUser } = useDeleteUser();
+    const doDeleteCategory = useDeleteCategory()
 
     const onConfirm = async () => {
         setLoading(true);
         try {
-            await deleteUser(data.id);
+            await doDeleteCategory.mutateAsync({ id: data.id })
             router.refresh();
         } catch (error) {
-            console.error('Error deleting user:', error);
+            console.error('Error deleting category:', error);
         } finally {
             setLoading(false);
             setOpen(false);
@@ -61,17 +60,15 @@ export const CellAction: React.FC<CellActionProps> = ({ data }) => {
                     <DropdownMenuLabel>Actions</DropdownMenuLabel>
 
                     <DropdownMenuItem
-                        onClick={() => router.push(`/dashboard/user/${data.id}`)}
+                        onClick={() => router.push(`/admin/category/${data.id}`)}
                     >
                         <Edit className="mr-2 h-4 w-4" /> Update
                     </DropdownMenuItem>
-
                     <DropdownMenuItem onClick={() => setOpen(true)}>
                         <Trash className="mr-2 h-4 w-4" /> Delete
                     </DropdownMenuItem>
                 </DropdownMenuContent>
             </DropdownMenu>
         </>
-
     );
 };

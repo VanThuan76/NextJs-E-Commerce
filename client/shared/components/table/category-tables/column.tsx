@@ -1,10 +1,10 @@
 import { ColumnDef } from '@tanstack/react-table';
 import { Checkbox } from '@/shared/components/ui/checkbox';
-import { IUser } from '@/server/_types/user-type';
+import { ICategory } from '@/server/_types/category-type';
 
 import { CellAction } from './cell-action';
 
-export const columns: ColumnDef<IUser>[] = [
+export const columns: ColumnDef<ICategory>[] = [
     {
         id: 'select',
         header: ({ table }) => (
@@ -29,31 +29,27 @@ export const columns: ColumnDef<IUser>[] = [
         header: 'ID',
     },
     {
-        accessorKey: 'emailAddresses',
-        header: 'Email',
+        accessorKey: 'name',
+        header: 'Name',
+    },
+    {
+        accessorKey: 'description',
+        header: 'Description',
+    },
+    {
+        accessorKey: 'createdAt',
+        header: 'Created At',
         cell: ({ getValue }) => {
-            const emailAddresses = getValue() as { emailAddress: string }[];
-            return emailAddresses.map((email) => email.emailAddress).join(', ');
+            const date = new Date(getValue() as number);
+            return date.toLocaleDateString();
         }
     },
     {
-        accessorKey: 'firstName',
-        header: 'First Name',
-    },
-    {
-        accessorKey: 'lastName',
-        header: 'Last Name',
-    },
-    {
-        accessorKey: 'emailAddresses',
-        header: 'Quyen han',
+        accessorKey: 'updatedAt',
+        header: 'Updated At',
         cell: ({ getValue }) => {
-            const emailAddresses = getValue() as { emailAddress: string }[];
-            if(emailAddresses[0].emailAddress === "thuanvuvan76@gmail.com"){
-                return "ADMIN"
-            }else {
-                return "CUSTOMER"
-            }
+            const date = new Date(getValue() as number);
+            return date.toLocaleDateString();
         }
     },
     {

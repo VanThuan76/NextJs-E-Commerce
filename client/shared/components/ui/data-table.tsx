@@ -5,6 +5,7 @@ import {
     flexRender,
     getCoreRowModel,
     getFilteredRowModel,
+    getPaginationRowModel,
     useReactTable
 } from '@tanstack/react-table';
 
@@ -35,11 +36,9 @@ export function DataTable<TData, TValue>({
         data,
         columns,
         getCoreRowModel: getCoreRowModel(),
-        getFilteredRowModel: getFilteredRowModel()
+        getFilteredRowModel: getFilteredRowModel(),
+        getPaginationRowModel: getPaginationRowModel(),
     });
-
-    /* this can be used to get the selectedrows
-    console.log("value", table.getFilteredSelectedRowModel()); */
 
     return (
         <>

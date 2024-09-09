@@ -1,0 +1,86 @@
+[
+  {
+    "id": 2,
+    "name": "Clothing",
+    "description": "Apparel, clothing, and accessories.",
+    "createdAt": "2024-09-08T10:45:00Z",
+    "updatedAt": "2024-09-08T10:45:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Books",
+    "description": "Books, magazines, and other reading materials.",
+    "createdAt": "2024-09-08T11:00:00Z",
+    "updatedAt": "2024-09-08T11:00:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Adidas Edit",
+    "description": "Adidas Mai Dinh",
+    "createdAt": "2024-09-08T14:01:48.645Z",
+    "updatedAt": "2024-09-08T15:04:33.630Z"
+  },
+  {
+    "id": 5,
+    "name": "Demo 99",
+    "description": "Demo 99",
+    "createdAt": "2024-09-09T03:07:54.106Z",
+    "updatedAt": "2024-09-09T03:07:54.106Z"
+  },
+  {
+    "id": 6,
+    "name": "Clothing6",
+    "description": "Apparel, clothing, and accessories.",
+    "createdAt": "2024-09-08T10:45:00Z",
+    "updatedAt": "2024-09-08T10:45:00Z"
+  },
+  {
+    "id": 7,
+    "name": "Books7",
+    "description": "Books, magazines, and other reading materials.",
+    "createdAt": "2024-09-08T11:00:00Z",
+    "updatedAt": "2024-09-08T11:00:00Z"
+  },
+  {
+    "id": 8,
+    "name": "Adidas Edit8",
+    "description": "Adidas Mai Dinh",
+    "createdAt": "2024-09-08T14:01:48.645Z",
+    "updatedAt": "2024-09-08T15:04:33.630Z"
+  },
+  {
+    "id": 9,
+    "name": "Demo 999",
+    "description": "Demo 99",
+    "createdAt": "2024-09-09T03:07:54.106Z",
+    "updatedAt": "2024-09-09T03:07:54.106Z"
+  },
+  {
+    "id": 10,
+    "name": "Clothing10",
+    "description": "Apparel, clothing, and accessories.",
+    "createdAt": "2024-09-08T10:45:00Z",
+    "updatedAt": "2024-09-08T10:45:00Z"
+  },
+  {
+    "id": 11,
+    "name": "Books11",
+    "description": "Books, magazines, and other reading materials.",
+    "createdAt": "2024-09-08T11:00:00Z",
+    "updatedAt": "2024-09-08T11:00:00Z"
+  },
+  {
+    "id": 12,
+    "name": "Adidas Edit12",
+    "description": "Adidas Mai Dinh",
+    "createdAt": "2024-09-08T14:01:48.645Z",
+    "updatedAt": "2024-09-08T15:04:33.630Z"
+  },
+  {
+    "id": 13,
+    "name": "Demo 9913",
+    "description": "Demo 99",
+    "createdAt": "2024-09-09T03:07:54.106Z",
+    "updatedAt": "2024-09-09T03:07:54.106Z"
+  }
+]
