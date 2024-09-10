@@ -33,7 +33,9 @@ export default async function RootLayout({
                 <body className={cn("min-h-screen bg-background", inter.className)}>
                     <Providers>
                         <Navbar />
-                        {children}
+                        <main className="w-full h-full overflow-x-hidden">
+                            {children}
+                        </main>
                     </Providers>
                 </body>
             </html>

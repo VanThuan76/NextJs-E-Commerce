@@ -44,14 +44,15 @@ export const columns: ColumnDef<IUser>[] = [
         accessorKey: 'lastName',
         header: 'Last Name',
     },
+
     {
         accessorKey: 'emailAddresses',
         header: 'Quyen han',
         cell: ({ getValue }) => {
             const emailAddresses = getValue() as { emailAddress: string }[];
-            if(emailAddresses[0].emailAddress === "thuanvuvan76@gmail.com"){
+            if (emailAddresses[0].emailAddress === "thuanvuvan76@gmail.com") {
                 return "ADMIN"
-            }else {
+            } else {
                 return "CUSTOMER"
             }
         }

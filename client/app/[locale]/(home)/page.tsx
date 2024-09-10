@@ -1,58 +1,41 @@
-import { BenefitsSection } from "@/app/[locale]/(home)/_sections/benefits";
-import { CommunitySection } from "@/app/[locale]/(home)/_sections/community";
-import { ContactSection } from "@/app/[locale]/(home)/_sections/contact";
-import { FAQSection } from "@/app/[locale]/(home)/_sections/faq";
-import { FeaturesSection } from "@/app/[locale]/(home)/_sections/features";
-import { FooterSection } from "@/app/[locale]/(home)/_sections/footer";
-import { HeroSection } from "@/app/[locale]/(home)/_sections/hero";
-import { PricingSection } from "@/app/[locale]/(home)/_sections/pricing";
-import { ServicesSection } from "@/app/[locale]/(home)/_sections/services";
-import { SponsorsSection } from "@/app/[locale]/(home)/_sections/sponsors";
-import { TeamSection } from "@/app/[locale]/(home)/_sections/team";
-import { TestimonialSection } from "@/app/[locale]/(home)/_sections/testimonial";
+'use client'
 
-export const metadata = {
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
-    openGraph: {
-        type: "website",
-        url: "https://github.com/nobruf/shadcn-landing-page.git",
-        title: "Shadcn - Landing template",
-        description: "Free Shadcn landing page for developers",
-        images: [
-            {
-                url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
-                width: 1200,
-                height: 630,
-                alt: "Shadcn - Landing template",
-            },
-        ],
-    },
-    twitter: {
-        card: "summary_large_image",
-        site: "https://github.com/nobruf/shadcn-landing-page.git",
-        title: "Shadcn - Landing template",
-        description: "Free Shadcn landing page for developers",
-        images: [
-            "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
-        ],
-    },
-};
+import Banner from "@/shared/components/banner";
+
+import ProductSection from "./_sections/product";
+import StorySection from "./_sections/story";
+import PromoteSection from "./_sections/promote";
+import WhatHostSection from "./_sections/what-host";
+import FooterSection from "./_sections/footer";
+
+import useBreakPoint from "@/shared/hooks/use-breakpoint";
 
 export default function Home() {
+    const breakpoint = useBreakPoint()
+
     return (
         <>
-            <HeroSection />
-            <SponsorsSection />
-            <BenefitsSection />
-            <FeaturesSection />
-            <ServicesSection />
-            <TestimonialSection />
-            <TeamSection />
-            <CommunitySection />
-            <PricingSection />
-            <ContactSection />
-            <FAQSection />
+            <Banner
+                data={{
+                    title: 'ADIDAS Z.N.E.',
+                    description: '',
+                    image: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/Banner_a4bb4fcaa6.jpg',
+                }}
+                textBtn="Tìm hiểu thêm"
+            />
+            <ProductSection />
+            <Banner
+                data={{
+                    title: 'Addidas TERREX | National Geographic',
+                    description: 'Khám phá Bộ sưu tập adidas TERREX | National Geographic mới.',
+                    image: breakpoint === "xs" ? 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_600,w_600/outdoor_FW_24_nat_geo_launch_reverse_seasonality_a_HP_banner_hero_v2_m_90d1157328.png' : 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/outdoor_FW_24_nat_geo_launch_reverse_seasonality_a_HP_banner_hero_v2_d_9349a2918d.png',
+                }}
+                textBtn="Tìm hiểu thêm"
+                className="mt-24"
+            />
+            <WhatHostSection />
+            <StorySection />
+            <PromoteSection />
             <FooterSection />
         </>
     );

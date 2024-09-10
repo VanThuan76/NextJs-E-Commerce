@@ -4,7 +4,7 @@
     "categoryId": 4,
     "name": "Giày thể thao Nike",
     "description": "Giày thể thao Nike Air Max, màu đen.",
-    "price": 120,
+    "price": 1000000,
     "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--f3QB99II--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/05r7fsc1jzylez5diu6f.jpg",
     "createdAt": "2024-09-01T10:00:00.000Z",
     "updatedAt": "2024-09-01T10:00:00.000Z"
@@ -14,7 +14,7 @@
     "categoryId": 4,
     "name": "Áo khoác Adidas",
     "description": "Áo khoác Adidas màu xanh dương, phù hợp cho mùa đông.",
-    "price": 80,
+    "price": 1000000,
     "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--f3QB99II--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/05r7fsc1jzylez5diu6f.jpg",
     "createdAt": "2024-09-02T12:00:00.000Z",
     "updatedAt": "2024-09-02T12:00:00.000Z"
@@ -24,7 +24,7 @@
     "categoryId": 2,
     "name": "Quần jeans Levi's",
     "description": "Quần jeans Levi's màu xanh đậm, chất liệu vải bền.",
-    "price": 60,
+    "price": 1000000,
     "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--f3QB99II--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/05r7fsc1jzylez5diu6f.jpg",
     "createdAt": "2024-09-03T14:00:00.000Z",
     "updatedAt": "2024-09-03T14:00:00.000Z"
@@ -34,7 +34,7 @@
     "categoryId": 5,
     "name": "Vu Van Thuan Edit",
     "description": "Kiểm tra lỗi tiền format",
-    "price": 9999,
+    "price": 1000000,
     "imageUrl": "/products/backdrop_instructor.png",
     "createdAt": "2024-09-09T02:39:08.525Z",
     "updatedAt": "2024-09-09T02:39:08.525Z"
@@ -44,7 +44,7 @@
     "categoryId": 3,
     "name": "Test lan nua",
     "description": "Test lan nua",
-    "price": 2220,
+    "price": 1000000,
     "imageUrl": "/products/image1.png",
     "createdAt": "2024-09-09T02:57:20.677Z",
     "updatedAt": "2024-09-09T02:57:20.677Z"
@@ -54,6 +54,76 @@
     "categoryId": 5,
     "name": "Demo product 99",
     "description": "Demo product 99",
+    "price": 1000000,
+    "imageUrl": "/products/meoyeu.jpg",
+    "createdAt": "2024-09-09T03:09:21.944Z",
+    "updatedAt": "2024-09-09T03:09:21.944Z"
+  },
+  {
+    "id": 7,
+    "categoryId": 4,
+    "name": "Demo product 77",
+    "description": "Demo product 77",
+    "price": 1000000,
+    "imageUrl": "/products/meoyeu.jpg",
+    "createdAt": "2024-09-09T03:09:21.944Z",
+    "updatedAt": "2024-09-09T03:09:21.944Z"
+  },
+  {
+    "id": 8,
+    "categoryId": 4,
+    "name": "Demo product 88",
+    "description": "Demo product 88",
+    "price": 1000000,
+    "imageUrl": "/products/meoyeu.jpg",
+    "createdAt": "2024-09-09T03:09:21.944Z",
+    "updatedAt": "2024-09-09T03:09:21.944Z"
+  },
+  {
+    "id": 9,
+    "categoryId": 4,
+    "name": "Demo product 999",
+    "description": "Demo product 999",
+    "price": 1000000,
+    "imageUrl": "/products/meoyeu.jpg",
+    "createdAt": "2024-09-09T03:09:21.944Z",
+    "updatedAt": "2024-09-09T03:09:21.944Z"
+  },
+  {
+    "id": 10,
+    "categoryId": 4,
+    "name": "Demo product 100",
+    "description": "Demo product 100",
+    "price": 1000000,
+    "imageUrl": "/products/meoyeu.jpg",
+    "createdAt": "2024-09-09T03:09:21.944Z",
+    "updatedAt": "2024-09-09T03:09:21.944Z"
+  },
+  {
+    "id": 11,
+    "categoryId": 4,
+    "name": "Demo product 111",
+    "description": "Demo product 111",
+    "price": 1000000,
+    "imageUrl": "/products/meoyeu.jpg",
+    "createdAt": "2024-09-09T03:09:21.944Z",
+    "updatedAt": "2024-09-09T03:09:21.944Z"
+  },
+  {
+    "id": 12,
+    "categoryId": 4,
+    "name": "Demo product 120",
+    "description": "Demo product 120",
+    "price": 1000000,
+    "imageUrl": "/products/meoyeu.jpg",
+    "createdAt": "2024-09-09T03:09:21.944Z",
+    "updatedAt": "2024-09-09T03:09:21.944Z"
+  },
+  {
+    "id": 13,
+    "categoryId": 4,
+    "name": "Demo product 130",
+    "description": "Demo product 130",
     "price": 1000000,
     "imageUrl": "/products/meoyeu.jpg",
     "createdAt": "2024-09-09T03:09:21.944Z",
