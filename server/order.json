@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "fullName": "Nguyen Van A",
+    "address": "123 Pham Van Dong, Hanoi",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "postCode": "100000",
+    "paymentMethod": "Credit Card",
+    "createdAt": "2024-09-12T10:00:00Z",
+    "updatedAt": "2024-09-12T10:00:00Z",
+    "status": "success"
+  },
+  {
+    "id": 2,
+    "fullName": "Tran Thi B",
+    "address": "456 Le Duan, Ho Chi Minh City",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "postCode": "700000",
+    "paymentMethod": "PayPal",
+    "createdAt": "2024-09-12T11:00:00Z",
+    "updatedAt": "2024-09-12T11:00:00Z",
+    "status": "success"
+  },
+  {
+    "id": 3,
+    "fullName": "Le Van C",
+    "address": "789 Nguyen Trai, Da Nang",
+    "city": "Da Nang",
+    "country": "Vietnam",
+    "postCode": "550000",
+    "paymentMethod": "Bank Transfer",
+    "createdAt": "2024-09-12T12:00:00Z",
+    "updatedAt": "2024-09-12T12:00:00Z",
+    "status": "success"
+  },
+  {
+    "id": 4,
+    "fullName": "THUAN VU VAN",
+    "address": "Tầng 1, Century Tower, Time City, Quận Hai Bà Trưng, Hà Nội",
+    "city": "Ha Noi",
+    "country": "Việt Nam",
+    "postCode": "12117",
+    "paymentMethod": "Money",
+    "status": "success",
+    "createdAt": "2024-09-12T06:36:07.294Z",
+    "updatedAt": "2024-09-12T07:13:03.550Z"
+  },
+  {
+    "id": 5,
+    "fullName": "ThuanHipp Vũ Văn",
+    "address": "Tầng 1, Century Tower, Time City, Quận Hai Bà Trưng, Hà Nội",
+    "city": "Ha Noi",
+    "country": "Việt Nam",
+    "postCode": "12117",
+    "paymentMethod": "Bank Transfer",
+    "status": "success",
+    "createdAt": "2024-09-12T08:50:11.340Z",
+    "updatedAt": "2024-09-12T08:50:56.263Z"
+  },
+  {
+    "id": 6,
+    "fullName": "ThuanHipp Vũ Văn",
+    "address": "Tầng 1, Century Tower, Time City, Quận Hai Bà Trưng, Hà Nội",
+    "city": "Ha Noi",
+    "country": "Việt Nam",
+    "postCode": "12117",
+    "paymentMethod": "Money",
+    "status": "PENDING",
+    "createdAt": "2024-09-12T08:51:43.754Z",
+    "updatedAt": "2024-09-12T08:51:43.754Z"
+  },
+  {
+    "id": 7,
+    "fullName": "ThuanHipp Vũ Văn",
+    "address": "Tầng 1, Century Tower, Time City, Quận Hai Bà Trưng, Hà Nội",
+    "city": "Ha Noi",
+    "country": "Việt Nam",
+    "postCode": "12117",
+    "paymentMethod": "PayPal",
+    "status": "success",
+    "createdAt": "2024-09-12T09:07:26.525Z",
+    "updatedAt": "2024-09-12T09:19:33.829Z"
+  }
+]

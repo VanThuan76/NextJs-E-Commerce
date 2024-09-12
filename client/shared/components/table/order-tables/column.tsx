@@ -1,14 +1,12 @@
-import Image from 'next/image';
+import { cn } from '@/shared/lib/utils';
 import { ColumnDef } from '@tanstack/react-table';
 import { Checkbox } from '@/shared/components/ui/checkbox';
 import { Badge } from '@/shared/components/ui/badge';
-
-import { ICategory } from '@/server/_types/category-type';
+import { IOrder } from '@/server/_types/order-type';
 
 import { CellAction } from './cell-action';
-import { formatCurrencyVN } from '@/shared/utils/format-money';
 
-export const columns: ColumnDef<ICategory>[] = [
+export const columns: ColumnDef<IOrder>[] = [
     {
         id: 'select',
         header: ({ table }) => (
@@ -33,51 +31,40 @@ export const columns: ColumnDef<ICategory>[] = [
         header: 'ID',
     },
     {
-        accessorKey: 'category.name',
-        header: 'Category',
-        cell: ({ getValue }) => {
-            const categoryName = getValue() as string;
-            return (
-                <Badge className='text-center'>{categoryName}</Badge>
-            );
-        }
-    },
-    {
-        accessorKey: 'imageUrl',
-        header: 'Image',
-        cell: ({ getValue }) => {
-            const imageUrl = getValue() as string;
-            return (
-                <Image
-                    src={imageUrl}
-                    alt="Product Image"
-                    width={100}
-                    height={100}
-                    className='w-[100px] h-auto object-cover'
-                />
-            );
-        }
-    },
-    {
-        accessorKey: 'name',
+        accessorKey: 'fullName',
         header: 'Name',
     },
     {
-        accessorKey: 'description',
-        header: 'Description',
+        id: 'address',
+        header: 'Address',
+        cell: ({ row }) => {
+            const { address, city, postCode } = row.original;
+            return `${address}, ${city}, ${postCode}`;
+        }
     },
     {
-        accessorKey: 'price',
-        header: 'Price',
+        id: 'products',
+        header: 'Products',
+        cell: ({ row }) => {
+            const products = row.original.products;
+            return products.map((product) => `Product ID: ${product.productId} (Quantity: ${product.quantity})`).join(', ');
+        }
+    },
+    {
+        accessorKey: 'status',
+        header: 'Status',
         cell: ({ getValue }) => {
-            return <p>{formatCurrencyVN(Number(getValue()))}</p>
+            const name = getValue() as string
+            return (
+                <Badge className={cn("uppercase", name === "success" ? "bg-green-400" : "bg-yellow-400")}>{name}</Badge>
+            )
         }
     },
     {
         accessorKey: 'createdAt',
         header: 'Created At',
         cell: ({ getValue }) => {
-            const date = new Date(getValue() as number);
+            const date = new Date(getValue() as string);
             return date.toLocaleDateString();
         }
     },
@@ -85,7 +72,7 @@ export const columns: ColumnDef<ICategory>[] = [
         accessorKey: 'updatedAt',
         header: 'Updated At',
         cell: ({ getValue }) => {
-            const date = new Date(getValue() as number);
+            const date = new Date(getValue() as string);
             return date.toLocaleDateString();
         }
     },

@@ -2,12 +2,12 @@
   {
     "id": 1,
     "categoryId": 4,
-    "name": "Giày thể thao Nike",
-    "description": "Giày thể thao Nike Air Max, màu đen.",
-    "price": 1000000,
-    "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--f3QB99II--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/05r7fsc1jzylez5diu6f.jpg",
+    "name": "Giày thể thao Nike Edit",
+    "description": "Giày thể thao Nike Air Max, màu đen edit",
+    "price": 123123232,
+    "imageUrl": "/products/b6a1f8c2d76a358b3d63a846f5f44e76-removebg-preview.png",
     "createdAt": "2024-09-01T10:00:00.000Z",
-    "updatedAt": "2024-09-01T10:00:00.000Z"
+    "updatedAt": "2024-09-12T07:37:05.411Z"
   },
   {
     "id": 2,
